@@ -5,6 +5,12 @@
     bottom: 0;
     margin-top: 20px;
     background-color: aqua; */
+
+    /* position: relative !important; */
+    
+
+    
+    /* margin-top: 90vh; */
 }
 
 
@@ -15,7 +21,36 @@
 
 }
 
+.window {
 
+  margin-top: 100px;
+  margin-left: 100px;
+
+  width: 400px;
+  min-height: 200px;
+}
+
+
+.closeIcon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-left: -1px;
+      margin-top: -1px;
+      transform: rotateZ(45deg);
+     position: relative;
+
+}
+
+.window:nth-child(2) {
+  margin: 2rem;
+}
+
+.windowHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
 .centerImage{
@@ -23,6 +58,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   }
 

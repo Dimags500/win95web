@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import styled from "styled-components";
 import {
   AppBar,
   Toolbar,
@@ -9,6 +8,8 @@ import {
   ListItem,
   Divider,
 } from "react95";
+
+import Styles from "../Desktop/styles.module.css";
 
 const Taskbar = () => {
   const [open, setOpen] = React.useState(false);
