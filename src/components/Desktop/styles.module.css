@@ -1,0 +1,28 @@
+
+
+.taskBar{
+    /* position: absolute;
+    bottom: 0;
+    margin-top: 20px;
+    background-color: aqua; */
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column-reverse;
+
+}
+
+
+
+
+.centerImage{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 90vh;
+  }
+
