@@ -9,9 +9,7 @@ const Desktop = () => {
       <div
         className={Styles.centerImage}
         style={{ backgroundImage: `url(${background})` }}
-      >
-        {/* <img src={background} /> */}
-      </div>
+      ></div>
       <div className={Styles.taskBar}>{/* <Taskbar /> */}</div>
       <div> sdsdsd</div>
     </div>
