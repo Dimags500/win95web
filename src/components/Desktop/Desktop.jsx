@@ -5,6 +5,7 @@ import background from "../../assents/img/0.jpg";
 import Draggable from "react-draggable";
 
 import { Window, WindowHeader, WindowContent, Button } from "react95";
+import Browser from "../browser/Browser";
 
 const Desktop = () => {
   return (
@@ -26,6 +27,10 @@ const Desktop = () => {
             </Window>
           </div>
         </Draggable>
+
+        <div>
+          <Browser browser={Styles.browser} />
+        </div>
       </div>
       <div className={Styles.taskBar}>
         <Taskbar />
