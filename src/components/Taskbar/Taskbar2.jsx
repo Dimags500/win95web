@@ -1,9 +1,6 @@
 import React, { useRef } from "react";
-
 import { TaskBar, Modal, List } from "@react95/core";
-
 import { ReaderClosed, WindowsExplorer, Inetcfg2300 } from "@react95/icons";
-
 import Styles from "../Desktop/styles.module.css";
 import Browser from "../browser/Browser";
 
@@ -87,8 +84,6 @@ const Taskbar2 = () => {
       </>
     );
   };
-
-  React.useCallback(renderTaskBar, [first, second.third]);
 
   return <>{renderTaskBar()}</>;
 };
