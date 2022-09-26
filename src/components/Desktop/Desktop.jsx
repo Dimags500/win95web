@@ -1,7 +1,7 @@
 import React from "react";
 import Taskbar from "../Taskbar/Taskbar";
 import Styles from "./styles.module.css";
-import background from "../../assents/img/0.jpg";
+import background from "../../assents/img/2.jpg";
 
 import Draggable from "react-draggable";
 

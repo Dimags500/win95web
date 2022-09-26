@@ -1,0 +1,55 @@
+
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column-reverse;
+
+}
+
+.window {
+
+  margin-top: 100px;
+  margin-left: 100px;
+
+  width: 400px;
+  min-height: 200px;
+}
+
+
+.closeIcon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-left: -1px;
+      margin-top: -1px;
+      transform: rotateZ(45deg);
+     position: relative;
+
+}
+
+.window:nth-child(2) {
+  margin: 2rem;
+}
+
+.windowHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.centerImage{
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  }
+
+  .browser{
+    width: 80%;
+    height: 45%;
+  }
+
