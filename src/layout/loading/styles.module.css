@@ -1,18 +1,5 @@
 
 
-.taskBar{
-    /* position: absolute;
-    bottom: 0;
-    margin-top: 20px;
-    background-color: aqua; */
-
-    /* position: relative !important; */
-    
-
-    
-    /* margin-top: 90vh; */
-}
-
 
 .main {
   display: flex;
@@ -55,7 +42,7 @@
 
 .centerImage{
   background-position: center;
-  background-size:  cover;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
