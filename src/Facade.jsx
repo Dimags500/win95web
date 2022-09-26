@@ -17,7 +17,7 @@ const Facade = () => {
         setTimeout(() => {
           setSatrUpScreen(false);
           setBlackScreen(true);
-        }, 4500);
+        }, 6000);
 
       loading();
 
@@ -45,8 +45,22 @@ const Facade = () => {
   return (
     <>
       {intro && (
-        <div>
-          <button onClick={() => setIntro(false)}>Go</button>
+        <div
+          style={{
+            marginTop: "150px",
+            textAlign: "center",
+            backgroundColor: "black",
+          }}
+        >
+          <button
+            style={{
+              width: "100px",
+              height: "100px",
+            }}
+            onClick={() => setIntro(false)}
+          >
+            Start Windows
+          </button>
         </div>
       )}
       {startUpScreen && <LoadingScreen />}

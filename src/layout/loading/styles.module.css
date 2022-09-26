@@ -53,3 +53,34 @@
     height: 45%;
   }
 
+ 
+
+  .loadingBar{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 4vh;
+    background-color:  #88bbeeb6;
+
+    /* animation: pulse 5s infinite ease-in-out ; */
+    animation: progressBar 4s ease-in-out infinite;
+    animation-fill-mode:both; 
+
+  }
+
+  @keyframes progressBar {
+    0% {
+      background-color: #d7e2ec94;
+    }
+    50% {
+      background-color: #38628bce;
+    }
+
+    100% {
+      background-color: #d1e8ff9d;
+    }
+  }
+  
+
+
