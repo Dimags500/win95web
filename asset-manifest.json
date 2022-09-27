@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Dimags500/win95web/static/css/main.1604c9d3.css",
+    "main.js": "/Dimags500/win95web/static/js/main.23470e0c.js",
+    "static/js/787.a86f3764.chunk.js": "/Dimags500/win95web/static/js/787.a86f3764.chunk.js",
+    "static/media/startup.mp3": "/Dimags500/win95web/static/media/startup.51c6bc125d4e0303e5cc.mp3",
+    "static/media/0.jpg": "/Dimags500/win95web/static/media/0.e09595b9d050fee91f13.jpg",
+    "static/media/logo.svg": "/Dimags500/win95web/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Dimags500/win95web/index.html",
+    "static/media/check.svg": "/Dimags500/win95web/static/media/check.cab94f089fae33556518400eea96707f.svg",
+    "static/media/check-disabled.svg": "/Dimags500/win95web/static/media/check-disabled.6c74515b9665a58c67515a6b7d03ecec.svg",
+    "static/media/rightcaret.svg": "/Dimags500/win95web/static/media/rightcaret.4316e9ffed3db2dabed84fe4f8329010.svg",
+    "main.1604c9d3.css.map": "/Dimags500/win95web/static/css/main.1604c9d3.css.map",
+    "main.23470e0c.js.map": "/Dimags500/win95web/static/js/main.23470e0c.js.map",
+    "787.a86f3764.chunk.js.map": "/Dimags500/win95web/static/js/787.a86f3764.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1604c9d3.css",
+    "static/js/main.23470e0c.js"
+  ]
+}
