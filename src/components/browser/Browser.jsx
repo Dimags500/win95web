@@ -1,88 +1,69 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import { Input, Button, List, Modal } from "@react95/core";
+import Styles from "./browser.module.css";
 import { Computer, Mshtml32534, Mmsys113, Inetcfg2300 } from "@react95/icons";
 
-const Browser = (browser) => {
+const Browser = (props) => {
   const base = "https://api.codetabs.com/v1/proxy?quest=";
-  const [url, setUrl] = React.useState(base + "https://nordicapis.com/");
-  const [web, setWeb] = React.useState("www.web.com");
+  const [url, setUrl] = React.useState(base + "https://www.google.com");
 
-  //   const getUrl = async (url) => {
-  //     const data = await axios.get(base + url);
+  const [show, toggleShow] = React.useState(true);
 
-  //     console.log(data.data);
-  //     setWeb(data.data);
-  //   };
-  const [showModal, toggleShowModal] = React.useState(true);
-
-  const handleOpenModal = () => toggleShowModal(true);
-  const handleCloseModal = () => toggleShowModal(false);
+  const handleOpenModal = () => toggleShow(true);
+  const handleCloseModal = () => toggleShow(false);
   const handleButtonClick = (e) => alert(e.currentTarget.value);
 
-  const urlRef = React.useRef("www.wiki.com");
+  const urlRef = React.useRef("");
+
+  useEffect(() => {
+    urlRef.current.value = "www.google.com";
+  }, []);
+
   return (
     <div>
-      <Input ref={urlRef} />
-      <Button onClick={() => setUrl(urlRef.current.value)} />
-      <iframe src={base + url} width="400" height="200"></iframe>
-
       <div>
-        <Button onClick={handleOpenModal}>Trigger Modal</Button>
-        {showModal && (
+        {show && (
           <Modal
-            width="300"
-            height="200"
+            width="500"
+            height="600"
             icon={<Inetcfg2300 variant="32x32_4" />}
             title="React Internet Explorer"
             defaultPosition={{
-              x: 0,
-              y: 20,
+              x: 50,
+              y: 120,
             }}
             closeModal={handleCloseModal}
-            buttons={[
-              { value: "Ok", onClick: handleButtonClick },
-              { value: "Cancel", onClick: handleButtonClick },
+            menu={[
+              {
+                name: "File",
+                list: (
+                  <List>
+                    <List.Item onClick={handleCloseModal}>Exit</List.Item>
+                  </List>
+                ),
+              },
+              {
+                name: "Edit",
+                list: (
+                  <List>
+                    <List.Item>Copy</List.Item>
+                  </List>
+                ),
+              },
             ]}
-            menu={
-              ([
-                {
-                  name: "File",
-                  list: (
-                    <List>
-                      <List.Item onClick={handleCloseModal}>Exit</List.Item>
-                    </List>
-                  ),
-                },
-                {
-                  name: "Edit",
-                  list: (
-                    <List>
-                      <List.Item>Copy</List.Item>
-                    </List>
-                  ),
-                },
-              ],
-              [
-                {
-                  name: "File",
-                  list: (
-                    <List>
-                      <List.Item onClick={handleCloseModal}>Exit</List.Item>
-                    </List>
-                  ),
-                },
-                {
-                  name: "Edit",
-                  list: (
-                    <List>
-                      <List.Item>Copy</List.Item>
-                    </List>
-                  ),
-                },
-              ])
-            }
-          />
+          >
+            <div className={Styles.browser}>
+              <Input
+                ref={urlRef}
+                className={Styles.input}
+                placeholder={urlRef.current.value}
+              />
+              <Button onClick={() => setUrl(urlRef.current.value)}>Go</Button>
+            </div>
+
+            <iframe src={base + url} className={Styles.content} />
+          </Modal>
         )}
       </div>
     </div>
