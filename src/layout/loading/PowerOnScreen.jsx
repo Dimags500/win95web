@@ -1,6 +1,5 @@
 import React from "react";
 import Styles from "./styles.module.css";
-import { PowerOn, Msnstart1 } from "@react95/icons";
 
 const PowerOnScreen = (props) => {
   return (
