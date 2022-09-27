@@ -4,7 +4,7 @@ import background from "../../assents/img/0.jpg";
 
 const LoadingScreen = () => {
   return (
-    <div className="">
+    <div>
       <div
         className={Styles.centerImage}
         style={{ backgroundImage: `url(${background})` }}
