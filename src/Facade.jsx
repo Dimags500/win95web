@@ -3,14 +3,16 @@ import Desktop from "./components/Desktop/Desktop";
 import BlackScreen from "./layout/loading/BlackScreen";
 import LoadingScreen from "./layout/loading/LoadingScreen";
 import sound from "./assents/sound/startup.mp3";
+import PowerOnScreen from "./layout/loading/PowerOnScreen";
+
 const Facade = () => {
-  const [intro, setIntro] = React.useState(true);
+  const [powerOnScreen, setPowerOnScreen] = React.useState(true);
   const [startUpScreen, setSatrUpScreen] = React.useState(false);
   const [blackScreen, setBlackScreen] = React.useState(false);
   const audio = new Audio(sound);
 
   React.useEffect(() => {
-    if (!intro) {
+    if (!powerOnScreen) {
       setSatrUpScreen(true);
 
       let loading = () =>
@@ -25,7 +27,7 @@ const Facade = () => {
         clearTimeout(loading);
       };
     }
-  }, [intro]);
+  }, [powerOnScreen]);
 
   React.useEffect(() => {
     if (blackScreen) {
@@ -44,28 +46,12 @@ const Facade = () => {
 
   return (
     <>
-      {intro && (
-        <div
-          style={{
-            marginTop: "150px",
-            textAlign: "center",
-            backgroundColor: "black",
-          }}
-        >
-          <button
-            style={{
-              width: "100px",
-              height: "100px",
-            }}
-            onClick={() => setIntro(false)}
-          >
-            Start Windows
-          </button>
-        </div>
+      {powerOnScreen && (
+        <PowerOnScreen toggleScreen={() => setPowerOnScreen(false)} />
       )}
       {startUpScreen && <LoadingScreen />}
       {blackScreen && <BlackScreen />}
-      {!startUpScreen && !blackScreen && !intro && <Desktop />}
+      {!startUpScreen && !blackScreen && !powerOnScreen && <Desktop />}
     </>
   );
 };
