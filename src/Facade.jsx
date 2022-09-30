@@ -46,14 +46,12 @@ const Facade = () => {
 
   return (
     <>
-      {/* {powerOnScreen && (
+      {powerOnScreen && (
         <PowerOnScreen toggleScreen={() => setPowerOnScreen(false)} />
       )}
       {startUpScreen && <LoadingScreen />}
       {blackScreen && <BlackScreen />}
-      {!startUpScreen && !blackScreen && !powerOnScreen && <Desktop />} */}
-
-      <Desktop />
+      {!startUpScreen && !blackScreen && !powerOnScreen && <Desktop />}
     </>
   );
 };

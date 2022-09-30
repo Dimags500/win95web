@@ -39,6 +39,7 @@
   justify-content: space-between;
 }
 
+ /*-------------------  loadingScreen ------------------------------*/
 
 .centerImage{
   background-position: center;
@@ -53,7 +54,7 @@
     height: 45%;
   }
 
- /*-------------------------------------------------*/
+ /*-------------------  loadingBar ------------------------------*/
 
   .loadingBar{
     position: absolute;
@@ -88,7 +89,7 @@
 margin: 0; overflow: hidden; background: #000;
 }
 
- /*-------------------------------------------------*/
+ /*--------------------  powerOnScreen -----------------------------*/
 .powerOnScreen{
   background-color: #000;
   width: 100vw;
@@ -101,5 +102,39 @@ margin: 0; overflow: hidden; background: #000;
   background-color: #000;
   color: coral;
   font-size: 30px;
+  border: none;
 }
 
+.powerOnScreen>button>div:hover {
+  animation: powerOnScreenButton 2s ease-in-out infinite;
+  animation-fill-mode:both; }
+
+@keyframes powerOnScreenButton {
+  0% {
+    color: coral;
+  }
+  50% {
+    color: rgb(53, 16, 2);
+  }
+
+  100% {
+    color: coral;
+  }
+}
+
+
+
+
+ /*-------------------  Mobile ------------------------------*/
+
+ @media (max-width:700px) {
+
+  .centerImage{
+    background-size: 200vw;
+    background-position: center, center;
+    background-repeat: repeat;
+    }
+ }
+
+
+ 
