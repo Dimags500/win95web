@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/win95web/static/css/main.3929af88.css",
-    "main.js": "/win95web/static/js/main.ade64060.js",
+    "main.css": "/win95web/static/css/main.07deb17b.css",
+    "main.js": "/win95web/static/js/main.be8c99af.js",
     "static/media/startup.mp3": "/win95web/static/media/startup.51c6bc125d4e0303e5cc.mp3",
     "static/media/0.jpg": "/win95web/static/media/0.e09595b9d050fee91f13.jpg",
     "index.html": "/win95web/index.html",
     "static/media/check.svg": "/win95web/static/media/check.cab94f089fae33556518400eea96707f.svg",
     "static/media/check-disabled.svg": "/win95web/static/media/check-disabled.6c74515b9665a58c67515a6b7d03ecec.svg",
     "static/media/rightcaret.svg": "/win95web/static/media/rightcaret.4316e9ffed3db2dabed84fe4f8329010.svg",
-    "main.3929af88.css.map": "/win95web/static/css/main.3929af88.css.map",
-    "main.ade64060.js.map": "/win95web/static/js/main.ade64060.js.map"
+    "main.07deb17b.css.map": "/win95web/static/css/main.07deb17b.css.map",
+    "main.be8c99af.js.map": "/win95web/static/js/main.be8c99af.js.map"
   },
   "entrypoints": [
-    "static/css/main.3929af88.css",
-    "static/js/main.ade64060.js"
+    "static/css/main.07deb17b.css",
+    "static/js/main.be8c99af.js"
   ]
 }
