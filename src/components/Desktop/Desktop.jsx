@@ -1,14 +1,11 @@
 import React from "react";
-import Taskbar from "../Taskbar/Taskbar";
 import Styles from "./styles.module.css";
 import background from "../../assents/img/1.png";
-
+import { Computer, Mshtml32534, Mmsys113, Inetcfg2300 } from "@react95/icons";
 import Draggable from "react-draggable";
-
 import Browser from "../browser/Browser";
 import Taskbar2 from "../Taskbar/Taskbar2";
-import { TaskBar } from "@react95/core";
-import { Fieldset, Frame, Modal } from "@react95/core";
+import VideoPlayer from "../VideoPlayer/VideoPlayer";
 
 const Desktop = () => {
   return (
@@ -17,7 +14,14 @@ const Desktop = () => {
         className={Styles.centerImage}
         style={{ backgroundImage: `url(${background})` }}
       >
-        {/* <Browser /> */}
+        <Draggable>
+          <Computer />
+        </Draggable>
+        <Draggable>
+          <Mshtml32534 />
+        </Draggable>
+        <Browser />
+        <VideoPlayer />
       </div>
 
       <div className={Styles.taskBar}>{/* <Taskbar /> */}</div>
